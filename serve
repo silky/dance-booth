@@ -18,7 +18,7 @@ mkdir -p ./server/log
 
 replace_text $OLD_WEIGHTS_FILEPATH $LOCAL_WEIGHTS_FILEPATH $FILE_TO_MODIFY
 
-cd ui     && yarn build && cd -
+cd ui     && npx yarn build && cd -
 
 # JavaScript is terrible; note that this step means that we
 # must have port = 8000, to match what we had to hardcode in
